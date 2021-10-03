@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+    <style>
+        body{
+            background: #1bc978;
+        }
+        section{
+            border: 3px solid red;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>this is heading 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quasi esse saepe, repellendus iure nesciunt.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsam a iusto commodi consectetur dignissimos doloribus, amet non quam cum explicabo nulla, mollitia voluptas autem distinctio maiores eius dolor. Blanditiis!</p>
+            <a href="#">Join Now</a>
+            
+            
+        </section>
+        <section>
+            <h2>this is heading 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quasi esse saepe, repellendus iure nesciunt.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsam a iusto commodi consectetur dignissimos doloribus, amet non quam cum explicabo nulla, mollitia voluptas autem distinctio maiores eius dolor. Blanditiis!</p>
+            <a href="#">Join Now</a>
+            
+            
+        </section>
+        <section>
+            <h2>this is heading 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quasi esse saepe, repellendus iure nesciunt.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsam a iusto commodi consectetur dignissimos doloribus, amet non quam cum explicabo nulla, mollitia voluptas autem distinctio maiores eius dolor. Blanditiis!</p>
+            <a href="#">Join Now</a>
+            
+            
+        </section>
+    </main>
+    <script>
+        //document.getElementById("pra").style.color = "red";
+
+        var sec =  document.getElementsByTagName('section');
+        var rand = Math.round(Math.random() * 2);
+        console.log(rand);
+        var ranColor = "#"+Math.floor((Math.random()*1000000)+1);
+        sec[rand].style.backgroundColor= ranColor;
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>
